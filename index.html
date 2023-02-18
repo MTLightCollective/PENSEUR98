@@ -28,7 +28,7 @@
   <body>
 	<a-scene mindar-image="imageTargetSrc: ./assets/penseur98.mind" device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false" arjs="debugUIEnabled: true">
       		<a-assets>
-  		<video src="./assets/video.mp4" id="penseurvideo" preload="auto" response-type="arraybuffer" autoplay="true" loop="true" webkit-playsinline></video>
+  		<video src="./assets/video.mp4" id="penseurvideo" preload="auto" response-type="arraybuffer" autoplay="true" loop="true" webkit-playsinline playsinline></video>
       		</a-assets>
       		<a-entity mindar-image-target="targetIndex: 0">
         	<video src="#penseurvideo" position="0 1 0"></video>
