@@ -23,17 +23,33 @@
         line-height: 50px;
         cursor: pointer;
       }
+	#play-button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        z-index: 9999;
+        background-color: #fff;
+        color: #000;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
 	<a-scene mindar-image="imageTargetSrc: ./assets/penseur98.mind" device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false" arjs="debugUIEnabled: true">
       		<a-entity mindar-image-target="targetIndex: 0" vidhandler>
-		<a-plane autoplay material="shader: chromakey; src: #penseurvideo; color: 1 1 0.01" position="0 0 0" height="1" width="1" rotation="0 0 0" scale ="2 2 1"></a-plane>
+		<a-plane autoplay material="shader: chromakey; src: #penseurvideo; color: 1 1 0.03" position="0 0 0" height="1" width="1" rotation="0 0 0" scale ="2 2 1"></a-plane>
       		</a-entity>
 		<a-assets>
-  		<video src="assets/video.mp4" preload="auto" id="penseurvideo" autoplay loop="true" crossorigin  webkit-playsinline playsinline controls></video>
+  		<video src="assets/video.mp4" preload="auto" id="penseurvideo" autoplay loop="true" crossorigin mute webkit-playsinline playsinline controls></video>
       		</a-assets>
 		<button id="exit-button" onclick="location.reload()"><i class="fas fa-sync"></i></button>
+		<button id="exit-button" onclick="location.reload()"><i class="fas fa-play"></i></button>
 		<a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
     	</a-scene>
   </body>
