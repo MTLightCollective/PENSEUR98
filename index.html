@@ -31,8 +31,7 @@
   		<video src="assets/video.mp4" id="penseurvideo" autoplay loop="true" playsinline></video>
       		</a-assets>
       		<a-entity mindar-image-target="targetIndex: 0">
-		<a-plane src="#penseurvideo" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
-        	<video src="#penseurvideo" width="1" height="1" position="1 1 1"></video>
+		<a-plane material="shader: chromakey; src: #penseurvideo; color: 1 1 0" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
       		</a-entity>
 		<button id="exit-button" onclick="location.reload()"><i class="fas fa-sync"></i></button>
 		<a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
