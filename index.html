@@ -28,7 +28,7 @@
   <body>
 	<a-scene mindar-image="imageTargetSrc: ./assets/penseur98.mind" device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false" arjs="debugUIEnabled: true">
       		<a-entity mindar-image-target="targetIndex: 0" vidhandler>
-		<a-plane material="shader: chromakey; src: #penseurvideo; color: 1 1 0.01" position="0 0 0" height="1" width="1" rotation="0 0 0" scale ="2 2 1"></a-plane>
+		<a-plane autoplay material="shader: chromakey; src: #penseurvideo; color: 1 1 0.01" position="0 0 0" height="1" width="1" rotation="0 0 0" scale ="2 2 1"></a-plane>
       		</a-entity>
 		<a-assets>
   		<video src="assets/video.mp4" preload="auto" id="penseurvideo" autoplay loop="true" crossorigin  webkit-playsinline playsinline controls></video>
